@@ -74,7 +74,9 @@ def _get_media_url(url, media_type=""):
         source_url = _get_vimeo_url(source_url)
     elif media_type == "mp4":
         pass
-    elif media_type == "ogv":
+    elif media_type == "ogg":
+        pass
+    elif media_type == "webm":
         pass
 
     return source_url
@@ -140,7 +142,7 @@ class JSONReader(BaseReader):
         data_path = str(pathlib.Path(filename).resolve().relative_to(self._absolute_data_path))
         videos = list()
         iframe_types = ["youtube", "vimeo", "wistia"]
-        html5_types = ["ogv", "mp4"]
+        html5_types = ["ogg", "mp4", "webm"]
         if 'videos' in json_data and isinstance(json_data['videos'], list) and len(json_data['videos']) > 0:
             for v in json_data['videos']:
                 v_data = dict()

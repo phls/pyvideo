@@ -4,8 +4,9 @@ from __future__ import unicode_literals
 import json
 import os
 
-AUTHOR = 'Unknown'
-SITENAME = 'PyVideo.org'
+AUTHOR = u'Software Livre Brasil'
+SITENAME = u'Vídeos de Sofftware Livre no Brasil'
+SITEURL = 'http://videos.softwarelivre.org'
 
 PATH = 'content'
 DATA_DIR = 'conferences'
@@ -21,9 +22,11 @@ IGNORE_FILES = [
     '*posters/apsimregions-a-gridded-modeling-framework-for-th.json',
 ]
 
-TIMEZONE = 'UTC'
+#TIMEZONE = 'UTC'
+TIMEZONE = 'America/Sao_Paulo'
 
-DEFAULT_LANG = 'en'
+#DEFAULT_LANG = 'en'
+DEFAULT_LANG = u'pt'
 
 DEFAULT_PAGINATION = 10
 
@@ -65,11 +68,12 @@ RELATIVE_URLS = True
 
 DELETE_OUTPUT_DIRECTORY = True
 
-THEME = 'themes/pytube-201601/'
+THEME = 'themes/slvideo/'
 
-GITHUB_URL = 'https://github.com/pyvideo/pyvideo'
-CONTRIBUTE_URL = 'https://github.com/pyvideo/pyvideo/wiki/How-to-Contribute-Media'
-API_URL = 'https://api.pyvideo.org'
+GITHUB_URL = 'https://github.com/phls/pyvideo'
+CONTRIBUTE_URL = 'https://github.com/phls/pyvideo/wiki/How-to-Contribute-Media'
+#API_URL = 'https://api.videos.softwarelivre.org'
+API_URL = 'http://videos.softwarelivre.org'
 
 STATIC_PATHS = [
     'images',
