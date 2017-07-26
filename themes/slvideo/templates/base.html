@@ -72,7 +72,7 @@
   {% endif %}
   <div class="header notice clearfix">
     Obrigado a todos que fizeram isso possível:
-    <a href="/pages/thank-you-contributors.html">Leia mais</a>
+    <a href="http://pyvideo.org/pages/thank-you-contributors.html">Leia mais</a>
   </div>
   <header id="banner" class="header clearfix">
     <nav class="header__nav"><div class="container">
@@ -81,16 +81,16 @@
           <a href="{{ SITEURL }}/index.html"><i class="fa fa-fw fa-home"></i> <span>Início</span></a>
         </li>
 
-        <li role="presentation"{% if article or output_file == "events.html" or output_file.startswith("events/") %} class="active"{% endif %}>
-          <a href="{{ SITEURL }}/events.html"><i class="fa fa-fw fa-list-ul"></i> <span>Eventos</span></a>
+        <li role="presentation"{% if article or output_file == "eventos.html" or output_file.startswith("eventos/") %} class="active"{% endif %}>
+          <a href="{{ SITEURL }}/eventos.html"><i class="fa fa-fw fa-list-ul"></i> <span>Eventos</span></a>
         </li>
 
         <li role="presentation"{% if output_file == "tags.html" or output_file.startswith("tag/") %} class="active"{% endif %}>
           <a href="{{ SITEURL }}/tags.html"><i class="fa fa-fw fa-tags"></i> <span>Tags</span></a>
         </li>
 
-        <li role="presentation"{% if output_file == "speakers.html" or output_file.startswith("speaker/") %} class="active"{% endif %}>
-          <a href="{{ SITEURL }}/speakers.html"><i class="fa fa-fw fa-users"></i> <span>Palestrantes</span></a>
+        <li role="presentation"{% if output_file == "palestrantes.html" or output_file.startswith("palestrante/") %} class="active"{% endif %}>
+          <a href="{{ SITEURL }}/palestrantes.html"><i class="fa fa-fw fa-users"></i> <span>Palestrantes</span></a>
         </li>
 
         {% for p in pages %}
@@ -104,7 +104,7 @@
     </div></nav>
     <div class="container">
       <h3 class="text-muted header__title">
-      <a href="{{ SITEURL }}/"><img src="/theme/images/logo.png" alt="" style="height:50px"> <span><i>Py</i>Video</span> <strong>{{ SITESUBTITLE }}</strong></a>
+      <a href="{{ SITEURL }}/"><img src="/theme/images/logo.png" alt="" style="height:50px"> <span><i>Py</i>Vídeo</span> /<span><i>SL</i>Vídeo</span>  <strong>{{ SITESUBTITLE }}</strong></a>
       </h3>
       <div class="header__searchbox">
         <form method="GET" action="/search.html">
@@ -121,8 +121,14 @@
     <footer class="footer">
       <p>
         &copy;
-        <a href="https://github.com/pyvideo/pyvideo/blob/master/LICENSE">PyVideo.org</a> |
-        <a href="https://github.com/pyvideo/data/blob/master/LICENSE">pyvideo/data</a>
+        <a href="https://github.com/phls/pyvideo/blob/master/LICENSE">videos.softwarelivre.org</a> |
+        <a href="https://github.com/phls/data/blob/master/LICENSE">videos.softwarelivre.org/data</a> <br />
+	<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" target="_blank">
+	<input type="hidden" name="currency" value="BRL" />
+	<input type="hidden" name="receiverEmail" value="phls@softwarelivre.org" />
+	<input type="hidden" name="iot" value="button" />
+	<input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/164x37-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+	</form>
       </p>
     </footer>
 

@@ -19,7 +19,7 @@
         </div>
         {% elif video.tag_type == 'html5' %}
         <div class="embed-responsive embed-responsive-16by9 videocontainer">
-            <video class="embed-responsive-item" controls>
+            <video class="embed-responsive-item" controls preload="none">
                 <source src="{{ video.media_url }}" type="video/{{ video.type }}">
             </video>
         </div>

@@ -7,6 +7,7 @@ import os
 AUTHOR = u'Software Livre Brasil'
 SITENAME = u'Vídeos de Sofftware Livre no Brasil'
 SITEURL = 'http://videos.softwarelivre.org'
+#SITESUBTITLE = 'SLVídeo'
 
 PATH = 'content'
 DATA_DIR = 'conferences'
@@ -32,14 +33,14 @@ DEFAULT_PAGINATION = 10
 
 DEFAULT_CATEGORY = "Undefined"
 
-AUTHOR_URL = AUTHOR_SAVE_AS = 'speaker/{slug}.html'
+AUTHOR_URL = AUTHOR_SAVE_AS = 'palestrante/{slug}.html'
 ARTICLE_URL = ARTICLE_SAVE_AS = '{category}/{slug}.html'
 ARTICLE_LANG_URL = ARTICLE_LANG_SAVE_AS = '{category}/{slug}-{lang}.html'
 DRAFT_URL = DRAFT_SAVE_AS = 'drafts/{category}/{slug}.html'
 DRAFT_LANG_URL = DRAFT_LANG_SAVE_AS = 'drafts/{category}/{slug}-{lang}.html'
-PAGE_URL = PAGE_SAVE_AS = 'pages/{slug}.html'
-PAGE_LANG_URL = PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
-CATEGORY_URL = CATEGORY_SAVE_AS = 'events/{slug}.html'
+PAGE_URL = PAGE_SAVE_AS = 'paginas/{slug}.html'
+PAGE_LANG_URL = PAGE_LANG_SAVE_AS = 'paginas/{slug}-{lang}.html'
+CATEGORY_URL = CATEGORY_SAVE_AS = 'eventos/{slug}.html'
 TAGS_URL = TAGS_SAVE_AS = 'tags.html'
 # Hack to avoid this issue: https://github.com/getpelican/pelican/issues/1137
 TAG_URL = 'tag/{slug}/'
@@ -47,8 +48,8 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 # End hack to avoid issue #1137
 YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%b}/index.html'
-CATEGORIES_SAVE_AS = 'events.html'
-AUTHORS_SAVE_AS = 'speakers.html'
+CATEGORIES_SAVE_AS = 'eventos.html'
+AUTHORS_SAVE_AS = 'palestrantes.html'
 
 USE_FOLDER_AS_CATEGORY = False
 
@@ -71,7 +72,8 @@ DELETE_OUTPUT_DIRECTORY = True
 THEME = 'themes/slvideo/'
 
 GITHUB_URL = 'https://github.com/phls/pyvideo'
-CONTRIBUTE_URL = 'https://github.com/phls/pyvideo/wiki/How-to-Contribute-Media'
+# inclui banner vermelho
+#CONTRIBUTE_URL = 'https://github.com/phls/pyvideo/wiki/How-to-Contribute-Media'
 #API_URL = 'https://api.videos.softwarelivre.org'
 API_URL = 'http://videos.softwarelivre.org'
 
