@@ -5,7 +5,7 @@ import json
 import os
 
 AUTHOR = u'Software Livre Brasil'
-SITENAME = u'Vídeos de Sofftware Livre no Brasil'
+SITENAME = u'Vídeos de Software Livre no Brasil'
 SITEURL = 'http://videos.softwarelivre.org'
 #SITESUBTITLE = 'SLVídeo'
 

@@ -47,6 +47,15 @@ Contato:
 
 E-mail: phls at softwarelivre dot org
 
+
+Palestras do FISL
+-----------------
+
+As informações das palestras do `FISL - Fórum Internacional Software Livre`_, foram gentilmente cedidas pelo Eduardo Klosowski.
+
+O Eduardo desenvolveu o Palestrita_ para organizar os vídeos do FISL que também podem ser vistos em: palestras.softwarelivre.org_
+
+
 Apoio:
 ------
 
@@ -60,3 +69,6 @@ Apoio:
 .. _`GitHub.com`: https://github.com/phls/pyvideo
 .. _`videos.softwarelivre.org`: http://videos.softwarelivre.org
 .. _`pyvideo.org/pages/about.html`: http://pyvideo.org/pages/about.html
+.. _`FISL - Fórum Internacional Software Livre`: http://fisl.org.br
+.. _`palestras.softwarelivre.org`: http://palestras.softwarelivre.org
+.. _`Palestrita`: https://github.com/eduardoklosowski/palestrita
