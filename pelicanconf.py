@@ -4,8 +4,9 @@ from __future__ import unicode_literals
 import json
 import os
 
-AUTHOR = 'Unknown'
-SITENAME = 'PyVideo.org'
+AUTHOR = "Software Livre Brasil"
+SITENAME = "Vídeos de Software Livre no Brasil"
+SITEURL = 'http://videos.gnulinux.com.br'
 TEMPLATE_PAGES = {
     'languages.html': 'languages.html',
 }
@@ -24,22 +25,22 @@ IGNORE_FILES = [
     '*posters/apsimregions-a-gridded-modeling-framework-for-th.json',
 ]
 
-TIMEZONE = 'UTC'
+TIMEZONE = 'America/Sao_Paulo'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = u'pt_BR'
 
 DEFAULT_PAGINATION = 10
 
 DEFAULT_CATEGORY = "Undefined"
 
-AUTHOR_URL = AUTHOR_SAVE_AS = 'speaker/{slug}.html'
+AUTHOR_URL = AUTHOR_SAVE_AS = 'palestrante/{slug}.html'
 ARTICLE_URL = ARTICLE_SAVE_AS = '{category}/{slug}.html'
 ARTICLE_LANG_URL = ARTICLE_LANG_SAVE_AS = '{category}/{slug}-{lang}.html'
 DRAFT_URL = DRAFT_SAVE_AS = 'drafts/{category}/{slug}.html'
 DRAFT_LANG_URL = DRAFT_LANG_SAVE_AS = 'drafts/{category}/{slug}-{lang}.html'
-PAGE_URL = PAGE_SAVE_AS = 'pages/{slug}.html'
-PAGE_LANG_URL = PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
-CATEGORY_URL = CATEGORY_SAVE_AS = 'events/{slug}.html'
+PAGE_URL = PAGE_SAVE_AS = 'paginas/{slug}.html'
+PAGE_LANG_URL = PAGE_LANG_SAVE_AS = 'paginas/{slug}-{lang}.html'
+CATEGORY_URL = CATEGORY_SAVE_AS = 'eventos/{slug}.html'
 TAGS_URL = TAGS_SAVE_AS = 'tags.html'
 # Hack to avoid this issue: https://github.com/getpelican/pelican/issues/1137
 TAG_URL = 'tag/{slug}/'
@@ -47,8 +48,8 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 # End hack to avoid issue #1137
 YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%b}/index.html'
-CATEGORIES_SAVE_AS = 'events.html'
-AUTHORS_SAVE_AS = 'speakers.html'
+CATEGORIES_SAVE_AS = 'eventos.html'
+AUTHORS_SAVE_AS = 'palestrantes.html'
 
 USE_FOLDER_AS_CATEGORY = False
 
@@ -56,23 +57,24 @@ USE_FOLDER_AS_CATEGORY = False
 FEED_MAX_ITEMS = 100
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_ATOM = 'feeds/event_%s.atom.xml'
-CATEGORY_FEED_RSS = 'feeds/event_%s.rss.xml'
-AUTHOR_FEED_ATOM = 'feeds/speaker_%s.atom.xml'
-AUTHOR_FEED_RSS = 'feeds/speaker_%s.rss.xml'
-TAG_FEED_ATOM = 'feeds/tag_%s.atom.xml'
-TAG_FEED_RSS = 'feeds/tag_%s.rss.xml'
+CATEGORY_FEED_ATOM = 'feeds/event_{slug}.atom.xml'
+CATEGORY_FEED_RSS = 'feeds/event_{slug}.rss.xml'
+AUTHOR_FEED_ATOM = 'feeds/speaker_{slug}.atom.xml'
+AUTHOR_FEED_RSS = 'feeds/speaker_{slug}.rss.xml'
+TAG_FEED_ATOM = 'feeds/tag_{slug}.atom.xml'
+TAG_FEED_RSS = 'feeds/tag_{slug}.rss.xml'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
 DELETE_OUTPUT_DIRECTORY = True
 
-THEME = 'themes/pytube-201601/'
+THEME = 'themes/slvideo/'
 
-GITHUB_URL = 'https://github.com/pyvideo/pyvideo'
-CONTRIBUTE_URL = 'https://github.com/pyvideo/pyvideo/wiki/How-to-Contribute-Media'
-API_URL = 'https://api.pyvideo.org'
+GITHUB_URL = 'https://github.com/phls/pyvideo'
+#CONTRIBUTE_URL = 'https://github.com/pyvideo/pyvideo/wiki/How-to-Contribute-Media'
+#API_URL = 'https://api.pyvideo.org'
+API_URL = 'http://videos.softwarelivre.org'
 
 STATIC_PATHS = [
     'images',
