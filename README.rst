@@ -46,11 +46,11 @@ manage virtualenvs. **Building pyvideo.org requires Python 3.5**
 First of all, create a virtual environment to install all the dependencies
 into either using virtualenvwrapper::
 
-  $ mkvirtualenv -p python3 pyvideo
+  $ python3 -m venv pyvideo 
 
-\... or using pyvenv::
+  $ cd pyvideo 
 
-  $ pyvenv .env && source .env/bin/activate
+  $ source bin/activate
 
 From the root of the repo, run the following command::
 
