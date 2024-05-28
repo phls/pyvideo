@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://videos.gnulinux.com.br'
+SITEURL = 'https://videos.gnulinux.com.br'
 RELATIVE_URLS = False
 
 DELETE_OUTPUT_DIRECTORY = True

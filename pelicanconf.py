@@ -6,7 +6,7 @@ import os
 
 AUTHOR = "Software Livre Brasil"
 SITENAME = "Vídeos de Software Livre no Brasil"
-SITEURL = 'http://videos.gnulinux.com.br'
+SITEURL = 'https://videos.gnulinux.com.br'
 TEMPLATE_PAGES = {
     'languages.html': 'languages.html',
 }
