@@ -34,7 +34,7 @@ All of these steps are explained in detail below.
 
 First, pull down this repo's code::
 
-  $ git clone --recursive https://github.com/pyvideo/pyvideo.git
+  $ git clone --recursive https://github.com/phls/pyvideo.git
 
 Then, install the dependencies for building this site. It is recommended to
 install all the requirements inside virtualenv_, use virtualenvwrapper_ to
